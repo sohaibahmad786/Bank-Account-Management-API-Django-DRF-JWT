@@ -1,9 +1,10 @@
 from django.db import models
 
-class Contact(models.Model):
+class Student(models.Model):
     name=models.CharField()
     email=models.EmailField()
-    message=models.TextField()
+    age=models.IntegerField()
+    course=models.CharField()
     created_at=models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
